@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Location: Sistem Amaran Pintar </title>
+    <link rel="Icon" type="Icon" href="ico.png">
+    <!-- Custom fonts for this template-->
+    <link href="/ifutem/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"  rel="stylesheet">
+    
+    <!-- Custom styles for this template-->
+    <link href="/ifutem/css/copy-sb-admin-2.css" rel="stylesheet">
+    <link href="/ifutem/css/zoom-marker.css" rel="stylesheet" >
+    <link href="/ifutem/css/easy-loading.css" rel="stylesheet" >
+    
+    <style>
+        .zoom-marker-hover-dialog
+        {
+            color: black;
+            background-color: #d9d9d9
+        }
+
+        .blink
+        {
+            animation-name: blinkMarker;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes blinkMarker {
+            0%   {top: 44px}
+            100% {top: 55px}
+        }
+
+        .zoom-marker span
+        {
+            position: absolute;
+            left: 45px;
+            color: #ffffffeb;
+            font-size: smaller;
+            font-weight: 800;
+            text-shadow: 1px 1px #000000, -1px 1px #000000, -1px -1px #000000;
+
+        }
+        
+    </style>
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-secondary-dashboard sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <img class="img-fluid mx-auto d-block" style="width:70px;" src="/ifutem/ifutem/img/siakap-logo.png">
+                </a>
+            </li>
+    
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item">
+                <a class="nav-link" href="dashboard.html">
+                    <i class="fas fa-fw fa-tachometer-alt "></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+    
+            <!-- Nav Item - Pages Collapse Menu - LOCATION-->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-warehouse"></i>
+                    <span>Location</span>
+                </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar"  style="z-index: 981;">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <!-- <h6 class="collapse-header">Panels:</h6>-->
+                        <a class="collapse-item" href="ploc1.php?		1	Block A(Security Building)	">	1	Block A (Security Building)	</a>
+                        <a class="collapse-item" href="ploc1.php?		2	Block F(Club House)	">	2	Block F (Club House)	</a>
+                        <a class="collapse-item" href="ploc1.php?		3	Techno Indah	">	3	Techno Indah	</a>
+                        <a class="collapse-item" href="ploc1.php?		4	Corporate Canteen	">	4	Corporate Canteen	</a>
+                        <a class="collapse-item" href="ploc1.php?		5	Schedule Waste	">	5	Schedule Waste	</a>
+                        <a class="collapse-item" href="ploc1.php?		6	Client Office No 12	">	6	Client Office No 12	</a>
+                        <a class="collapse-item" href="ploc1.php?		7	MCD Canteen	">	7	MCD Canteen	</a>
+                        <a class="collapse-item" href="ploc1.php?		8	Workshop 3	">	8	Workshop 3	</a>
+                        <a class="collapse-item" href="ploc1.php?		9	Workshop 4	">	9	Workshop 4	</a>
+                        <a class="collapse-item" href="ploc1.php?		10	Workshop 5	">	10	Workshop 5	</a>
+                        <a class="collapse-item" href="ploc1.php?		11	Workshop 6	">	11	Workshop 6	</a>
+                        <a class="collapse-item" href="ploc1.php?		12	Workshop 7	">	12	Workshop 7	</a>
+                        <a class="collapse-item" href="ploc1.php?		13	Workshop 18	">	13	Workshop 18	</a>
+                        <a class="collapse-item" href="ploc1.php?		14	Workshop 19	">	14	Workshop 19	</a>
+                        <a class="collapse-item" href="ploc1.php?		15	Workshop 22	">	15	Workshop 22	</a>
+                        <a class="collapse-item" href="ploc1.php?		16	Workshop 28	">	16	Workshop 28	</a>
+                        <a class="collapse-item" href="ploc1.php?		17	Workshop 32	">	17	Workshop 32	</a>
+                        <a class="collapse-item" href="ploc1.php?		18	Workshop 39	">	18	Workshop 39	</a>
+                        <a class="collapse-item" href="ploc1.php?		19	Workshop 40	">	19	Workshop 40	</a>
+                        <a class="collapse-item" href="ploc1.php?		20	Workshop 41	">	20	Workshop 41	</a>
+                        <a class="collapse-item" href="ploc1.php?		21	Workshop 42	">	21	Workshop 42	</a>
+                        <a class="collapse-item" href="ploc1.php?		22	Workshop 43	">	22	Workshop 43	</a>
+                        <a class="collapse-item" href="ploc1.php?		23	Block D (IT Data Center)	">	23	Block D (IT Data Center)	</a>
+                        <a class="collapse-item" href="ploc1.php?		24	Warehouse A (Cold Room)	">	24	Warehouse A (Cold Room)	</a>
+                        <a class="collapse-item" href="ploc1.php?		25	LSS 37	">	25	LSS 37	</a>
+                        <a class="collapse-item" href="ploc1.php?		26	LSS 11	">	26	LSS 11	</a>
+                        <a class="collapse-item" href="ploc1.php?		27	LSS 12	">	27	LSS 12	</a>
+                        <a class="collapse-item" href="ploc1.php?		28	LSS 39	">	28	LSS 39	</a>
+                        <a class="collapse-item" href="ploc1.php?		29	LSS 36	">	29	LSS 36	</a>
+                        <a class="collapse-item" href="ploc1.php?		30	LSS 29	">	30	LSS 29	</a>
+                        <a class="collapse-item" href="ploc1.php?		31	LSS 38	">	31	LSS 38	</a>
+                        <a class="collapse-item" href="ploc1.php?		32	LSS 33	">	32	LSS 33	</a>
+                        <a class="collapse-item" href="ploc1.php?		33	LSS 35	">	33	LSS 35	</a>
+                        <a class="collapse-item" href="ploc1.php?		34	LSS 41	">	34	LSS 41	</a>
+                        <a class="collapse-item" href="ploc1.php?		35	LSS 42	">	35	LSS 42	</a>
+                        <a class="collapse-item" href="ploc1.php?		36	DD3 COMPRESSOR	">	36	DD3 COMPRESSOR	</a>
+                        <a class="collapse-item" href="ploc1.php?		37	DD3 Dock Pump	">	37	DD3 Dock Pump	</a>
+                        <a class="collapse-item" href="ploc1.php?		38	SCM1	">	38	SCM1	</a>
+                        <a class="collapse-item" href="ploc1.php?		39	SCM2	">	39	SCM2	</a>
+                        <a class="collapse-item" href="ploc1.php?		40	Block P	">	40	Block P	</a>
+                        <a class="collapse-item" href="ploc1.php?		41	Client Office 8	">	41	Client Office 8	</a>
+                        <a class="collapse-item" href="ploc1.php?		42	Client Office 5	">	42	Client Office 5	</a>
+                        <a class="collapse-item" href="ploc1.php?		43	Client Office 4	">	43	Client Office 4	</a>
+                        <a class="collapse-item" href="ploc1.php?		44	Block M	">	44	Block M	</a>
+                        <a class="collapse-item" href="ploc1.php?		45	Client Office 2	">	45	Client Office 2	</a>
+                        <a class="collapse-item" href="ploc1.php?		46	Block N	">	46	Block N	</a>
+                        <a class="collapse-item" href="ploc1.php?		47	Workshop 24	">	47	Workshop 24	</a>
+                        <a class="collapse-item" href="ploc1.php?		48	Block O	">	48	Block O	</a>
+                        <a class="collapse-item" href="ploc1.php?		49	Gas Plant	">	49	Gas Plant	</a>
+                        <a class="collapse-item" href="ploc1.php?		50	Main Sub Station	">	50	Main Sub Station	</a>
+                        <a class="collapse-item" href="ploc1.php?		51	Centralized Canteen1	">	51	Centralized Canteen1	</a>
+                        <a class="collapse-item" href="ploc1.php?		52	Centralized Canteen2	">	52	Centralized Canteen2	</a>
+                        <a class="collapse-item" href="ploc1.php?		53	Block L	">	53	Block L	</a>
+                        <a class="collapse-item" href="ploc1.php?		54	Workshop 2	">	54	Workshop 2	</a>
+                        <a class="collapse-item" href="ploc1.php?		55	Centralized Canteen2	">	55	Centralized Canteen2	</a>
+                        <a class="collapse-item" href="ploc1.php?		56	Workshop 18	">	56	Workshop 18	</a>
+                        <a class="collapse-item" href="ploc1.php?		57	Ex Tsd Workshop	">	57	Ex Tsd Workshop	</a>
+                        <a class="collapse-item" href="ploc1.php?		58	Workshop 15	">	58	Workshop 15	</a>
+                        <a class="collapse-item" href="ploc1.php?		59	Block J	">	59	Block J	</a>
+                        <a class="collapse-item" href="ploc1.php?		60	Workshop 9	">	60	Workshop 9	</a>
+                        <a class="collapse-item" href="ploc1.php?		61	Workshop 10	">	61	Workshop 10	</a>
+                        <a class="collapse-item" href="ploc1.php?		62	Training Center	">	62	Training Center	</a>
+                        <a class="collapse-item" href="ploc1.php?		63	Corporate Office	">	63	Corporate Office	</a>
+                        <a class="collapse-item" href="ploc1.php?		64	Block H	">	64	Block H	</a>
+                    </div>
+                </div>
+            </li>
+    
+            <!-- Nav Item - Utilities Collapse Menu - HISTORY -->
+            <li class="nav-item">    
+    
+                <a class="nav-link collapsed" href="event" data-toggle="collapse" data-target="#collapseThree"
+                    aria-expanded="true" aria-controls="collapseThree">
+                    <i class="fas fa-fw fa-clock"></i>
+                    <span>History</span>
+                </a>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar" style="z-index: 981;">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="event">Events Log</a>
+                        <a class="collapse-item" href="log">Data Log</a>
+                    </div>
+                </div>
+            </li>
+    
+            <!-- Nav Item - Utilities Collapse Menu - GUIDE -->
+            <li class="nav-item">    
+    
+                <a class="nav-link collapsed" href="event" data-toggle="collapse" data-target="#collapseFour"
+                    aria-expanded="true" aria-controls="collapseFour">
+                    <i class="fas fa-fw fa-question-circle"></i>
+                    <span>Guide</span>
+                </a>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar" style="z-index: 981;">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="#">Guide 1</a>
+                        <a class="collapse-item" href="#">Guide 2</a>
+                    </div>
+                </div>
+            </li>
+    
+            <!-- Divider 
+            <hr class="sidebar-divider d-none d-md-block">
+    
+             Heading
+            <div class="sidebar-heading">
+                Isolate
+            </div> -->
+    
+            <!--//ISOLATE ASAL
+            <li class="nav-item">
+                <a href="isolate.html" class="nav-link btn btn-secondary btn-icon-split mb-4 mt-4">
+                    <span class="icon text-gray-600">
+                        <i class="fas fa-bell"></i>
+                    </span>
+                    <span class="text">Isolate</span>
+                </a>
+                
+                    <a class="nav-link" href="index.html">
+                    <i class="fas fa-fw fa-bell"></i>
+                    <span>Isolate</span></a> 
+            </li>-->
+    
+            <li class="nav-item">
+                <a href="isolate.html" class="nav-link">
+                        <i class="fas fa-fw fa-bell"></i>
+                        <span class="text">Isolate</span>
+                </a>
+            </li>
+    
+            <li class="nav-item">
+                <a href="report.html" class="nav-link">
+                        <i class="fas fa-fw fa-tachometer-alt"></i>
+                        <span class="text">Report</span>
+                </a>
+            </li>
+    
+            <li class="nav-item">
+                <a href="logout.php" class="nav-link">
+                        <i class="fas fa-fw fa-arrow-left"></i>
+                        <span class="text">Logout</span>
+                </a>
+            </li>
+    
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+    
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+                    <div class="d-sm-flex align-items-center justify-content-between">
+                        <h1 class="h3 mb-0 text-gray-800 mr-2">Isolate</h1>
+                    </div>
+                    <!-- Sidebar Toggle (Topbar) -->
+                    
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- Nav Item - Alerts -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-bell fa-fw"></i>
+                                <!-- Counter - Alerts -->
+                                <span class="badge badge-danger badge-counter">3+</span>
+                            </a>
+                            <!-- Dropdown - Alerts -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="alertsDropdown">
+                                <h6 class="dropdown-header">
+                                    Alerts Center
+                                </h6>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-primary">
+                                            <i class="fas fa-file-alt text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">Month Day, Year</div>
+                                        <span class="font-weight-bold">Alert 1</span>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-success">
+                                            <i class="fas fa-donate text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">December 7, 2019</div>
+                                        Alert2
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-warning">
+                                            <i class="fas fa-exclamation-triangle text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">December 2, 2019</div>
+                                        Alert3
+                                    </div>
+                                </a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                            </div>
+                        </li>
+                        <!-- End of Nav Item - Alerts -->
+
+                        <div class="topbar-divider d-none d-sm-block"></div>
+
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Admin</span>
+                                <img class="img-profile rounded-circle"
+                                    src="/ifutem/ifutem/img/undraw_profile.svg">
+                            </a>
+                            <!-- Dropdown - User Information -->
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Profile
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Settings
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Activity Log
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Logout
+                                </a>
+                            </div>
+                        </li>
+
+                    </ul>
+                </nav>
+                <!-- End of Topbar -->
+
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800"> <i class="fas fa-fw fa-tachometer-alt text-gray-400"></i> Panel Location: 3 Techno Indah</h1><h6 id="lastUpdated"></h6>
+                        <!-- <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-danger shadow-sm"><i
+                                class="fas fa-download fa-sm text-white-50"></i> Generate Report</a> -->
+                    </div>
+
+                    <!-- Content Row -->
+                    <div class="row">
+                        <div class="text-xs font-weight-bold text-uppercase mb-1 ml-3 text-panel-name">
+                            Ground Floor
+                        </div>
+                    </div>
+                    <div class="row">
+                    <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div id="cardsensor2" class="card border-left-danger shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-uppercase mb-1 text-panel-name">
+                                                BREAKGLASS</div>
+                                            <div id="cardstatus2" class="h5 mb-0 font-weight-bold text-status-normal text-danger">Alarm
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-hammer fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div id="cardsensor2" class="card border-left-warning shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-uppercase mb-1 text-panel-name">
+                                                SMOKE DETECTOR</div>
+                                            <div id="cardstatus2" class="h5 mb-0 font-weight-bold text-status-normal text-warning">Alert
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-fire fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div id="cardsensor2" class="card border-left-success shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-uppercase mb-1 text-panel-name">
+                                                BREAKGLASS</div>
+                                            <div id="cardstatus2" class="h5 mb-0 font-weight-bold text-status-normal text-success">Normal
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-hammer fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div id="cardsensor2" class="card border-left-success shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-uppercase mb-1 text-panel-name">
+                                                BREAKGLASS</div>
+                                            <div id="cardstatus2" class="h5 mb-0 font-weight-bold text-status-normal text-success">Normal
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-hammer fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Content Row -->
+                    <div class="row">
+                        <div class="text-xs font-weight-bold text-uppercase mb-1 ml-3 text-panel-name">
+                            1st Floor
+                        </div>
+                    </div>
+                    <div class="row">
+                    <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div id="cardsensor2" class="card border-left-success shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-uppercase mb-1 text-panel-name">
+                                                BREAKGLASS</div>
+                                            <div id="cardstatus2" class="h5 mb-0 font-weight-bold text-status-normal text-success">Normal
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-hammer fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div id="cardsensor2" class="card border-left-success shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-uppercase mb-1 text-panel-name">
+                                                BREAKGLASS</div>
+                                            <div id="cardstatus2" class="h5 mb-0 font-weight-bold text-status-normal text-success">Normal
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-hammer fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div id="cardsensor2" class="card border-left-success shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-uppercase mb-1 text-panel-name">
+                                                BREAKGLASS</div>
+                                            <div id="cardstatus2" class="h5 mb-0 font-weight-bold text-status-normal text-success">Normal
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-hammer fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Content Row -->
+                    <div class="row">
+                        <div class="text-xs font-weight-bold text-uppercase mb-1 ml-3 text-panel-name">
+                            Ground Floor
+                        </div>
+                    </div>
+                    <div class="row">
+                    <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div id="cardsensor2" class="card border-left-success shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-uppercase mb-1 text-panel-name">
+                                                BREAKGLASS</div>
+                                            <div id="cardstatus2" class="h5 mb-0 font-weight-bold text-status-normal text-success">Normal
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-hammer fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div id="cardsensor2" class="card border-left-success shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-uppercase mb-1 text-panel-name">
+                                                BREAKGLASS</div>
+                                            <div id="cardstatus2" class="h5 mb-0 font-weight-bold text-status-normal text-success">Normal
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-hammer fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-red">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto text-white">
+                        <span>Copyright &copy; Ingeniouscity Solution Engineering 2022</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+            
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->                 
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded-circle" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="logout">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="/ifutem/vendor/jquery/jquery.min.js"></script>
+    <script src="/ifutem/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="/ifutem/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Zoommarker plugin JavaScript-->
+    <script src="/ifutem/vendor/zoommarker/zoom-marker.min.js"></script>
+    <script src="/ifutem/vendor/zoommarker/jquery.mousewheel.min.js"></script>
+    <script src="/vendor/zoommarker/hammer.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="/ifutem/js/sb-admin-2.min.js"></script>
+</body>
+
+</html>
